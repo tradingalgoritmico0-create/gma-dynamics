@@ -29,7 +29,7 @@ body {
   background-color: var(--bg-dark-elite);
   color: var(--text-gray-light);
   font-family: var(--font-secondary);
-  overflow-x: hidden; /* Applied ONLY to body to prevent AOS breakage */
+  overflow-x: clip; /* Reemplazo de hidden por clip para no romper AOS */
   width: 100%;
 }
 
