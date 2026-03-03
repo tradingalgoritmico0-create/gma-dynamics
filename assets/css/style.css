@@ -410,3 +410,112 @@ section {
   max-height: 40px;
   width: auto;
 }
+
+/* 12. BUTTONS & TICKER FIXES
+-------------------------------------------- */
+
+/* Button Styles */
+.btn-primary-teal {
+  background-color: #00B2A9 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 178, 169, 0.3);
+}
+
+.btn-primary-teal:hover {
+  background-color: #008f88 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 178, 169, 0.6);
+  color: #ffffff !important;
+}
+
+.btn-ghost {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  padding: 0.75rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  border-color: #00B2A9 !important;
+  color: #00B2A9 !important;
+  background-color: rgba(0, 178, 169, 0.05) !important;
+  transform: translateY(-3px);
+}
+
+/* Infinite Ticker Animation */
+.ticker-wrapper {
+  overflow: hidden;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ticker-wrapper::before,
+.ticker-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+}
+
+.ticker-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #0a0f16 0%, transparent 100%);
+}
+
+.ticker-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #0a0f16 0%, transparent 100%);
+}
+
+.ticker-track {
+  display: inline-block;
+  animation: scroll-ticker 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0 3rem;
+  color: #a0aec0;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.ticker-item i {
+  font-size: 2rem;
+}
+
+.ticker-item:hover {
+  color: #00B2A9;
+  transform: scale(1.1);
+}
+
+@keyframes scroll-ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
