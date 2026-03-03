@@ -515,3 +515,38 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-50%);
   }
 }
+
+/* 13. ADDITIONAL MOBILE HOTFIXES
+-------------------------------------------- */
+@media (max-width: 768px) {
+  /* 1. Fix Títulos Legales: Empujar el header debajo del menú flotante */ 
+  body > header.py-10 { 
+    padding-top: 130px !important; 
+    padding-bottom: 2rem !important; 
+  } 
+  
+  /* 2. Fix Página de Contacto: Desactivar el centrado vertical forzado que esconde contenido */ 
+  main.min-vh-100 { 
+    display: block !important; 
+    height: auto !important; 
+    padding-top: 120px !important; /* Espacio para el navbar */ 
+    padding-bottom: 40px !important; 
+  } 
+  
+  /* 3. Fix Contacto: Reducir los paddings gigantes (p-5) para que el formulario respire */ 
+  .p-5 { 
+    padding: 1.5rem !important; 
+  } 
+  
+  /* 4. Fix Contacto: Asegurar que las cajas de contenido usen todo el ancho del celular */ 
+  .max-w-500, .max-w-600 { 
+    max-width: 100% !important; 
+    width: 100% !important; 
+  } 
+  
+  /* 5. Fix Títulos Largos: Evitar que textos muy largos rompan la pantalla */ 
+  .hero-title-gradient { 
+    word-wrap: break-word; 
+    hyphens: auto; 
+  } 
+}
