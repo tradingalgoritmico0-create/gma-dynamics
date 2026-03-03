@@ -87,23 +87,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.05);
 }
 
-/* Navbar Mobile Legibility */
-@media (max-width: 991px) {
-  .navbar-collapse.show {
-    background-color: var(--bg-dark-elite) !important;
-    margin-top: 1rem;
-    padding: 1.5rem;
-    border-radius: 15px;
-    border: 1px solid var(--white-10);
-    backdrop-filter: blur(20px);
-  }
-  
-  .navbar-nav .nav-link {
-    padding: 0.8rem 0;
-    font-size: 1.1rem;
-  }
-}
-
 /* 6. HERO & ANIMATED BACKGROUND
 -------------------------------------------- */
 .hero-section {
@@ -440,97 +423,81 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* 10. MASTER RESPONSIVE DESIGN (MOBILE & TABLET FIXES) 
--------------------------------------------- */ 
-@media (max-width: 991px) { 
-  /* 1. Protección Global del Navbar */ 
-  /* Añade un padding al body igual al alto del navbar para que NINGÚN título quede oculto debajo de él */ 
-  body { 
-    padding-top: 76px !important; 
-  } 
-  
-  /* 2. Tipografía Dinámica (Evita que los textos anchos rompan la pantalla) */ 
-  h1, .display-2, .display-3, .display-4, .hero-title-gradient { 
-    font-size: 2.2rem !important; 
-    line-height: 1.2 !important; 
-    word-wrap: break-word; 
-  } 
-  h2, .display-5 { 
-    font-size: 1.8rem !important; 
-  } 
-  .lead { 
-    font-size: 1.1rem !important; 
-  } 
-
-  /* 3. Reducción de espaciados gigantes en todas las páginas */ 
-  .py-10 { 
-    padding-top: 3rem !important; 
-    padding-bottom: 3rem !important; 
-  } 
-
-  /* 4. FIX INDEX: Ajuste del Hero Section */ 
-  .hero-section { 
-    height: auto !important; 
-    min-height: calc(100vh - 76px) !important; 
-    padding-top: 3rem !important; 
-    padding-bottom: 3rem !important; 
-    display: flex; 
-    align-items: center; 
-  } 
-
-  /* 5. FIX LEGALES Y SERVICIOS: Espaciado de los Headers secundarios */ 
-  header:not(.hero-section) { 
-    padding-top: 2rem !important; 
-    padding-bottom: 2rem !important; 
-  } 
-
-  /* 6. FIX CONTACTO: Liberar el flexbox que aplasta el formulario */ 
-  main.min-vh-100, .row.min-vh-100 { 
-    height: auto !important; 
-    min-height: auto !important; 
-    display: block !important; 
-  } 
-  .col-lg-6.p-5 { 
-    padding: 2.5rem 1.5rem !important; /* Reduce los márgenes gigantes laterales */ 
-  } 
-
-  /* 7. Tarjetas y Bento Grid */ 
-  .glass-card { 
-    padding: 1.5rem !important; 
-  } 
-  .row.g-4 { 
-    --bs-gutter-y: 1.5rem; 
-  } 
-
-  /* 8. Ticker Logos Móviles */ 
-  .ticker-item { 
-    margin: 0 1.5rem; 
-    font-size: 0.9rem; 
-  } 
-  .ticker-item i { 
-    font-size: 1.5rem; 
-  } 
-
-  /* 9. Widget WhatsApp más pequeño para no estorbar en la pantalla */ 
-  .whatsapp-flip-container { 
-    bottom: 20px; 
-    right: 20px; 
-    width: 55px; 
-    height: 55px; 
-  } 
-  .whatsapp-flip-front { font-size: 26px; } 
-} 
-
-@media (max-width: 480px) { 
-  h1, .display-2, .display-3 { 
-    font-size: 1.8rem !important; 
-  } 
-  .btn-lg { 
-    width: 100%; 
-    margin-bottom: 0.5rem; 
-  } 
-  .glass-card { 
-    padding: 1.25rem !important; 
-  } 
-} 
+/* ========================================== 
+    MOBILE LOCKDOWN (100% RESPONSIVE SAFE) 
+ ========================================== */ 
+ @media (max-width: 991px) { 
+   /* 1. Bloqueo estricto de desbordamiento horizontal */ 
+   html, body { 
+     max-width: 100vw !important; 
+     overflow-x: hidden !important; 
+   } 
+   
+   .container { 
+     max-width: 100vw !important; 
+     overflow-x: hidden !important; 
+     padding-left: 20px !important; 
+     padding-right: 20px !important; 
+   } 
+ 
+   /* 2. Anulación de márgenes negativos de Bootstrap que rompen la pantalla */ 
+   .row { 
+     margin-left: 0 !important; 
+     margin-right: 0 !important; 
+   } 
+   .row > * { 
+     padding-left: 10px !important; 
+     padding-right: 10px !important; 
+   } 
+ 
+   /* 3. Prevención de aplastamiento vertical (Especial para Contacto y Hero) */ 
+   .min-vh-100, .hero-section { 
+     min-height: auto !important; 
+     height: auto !important; 
+     display: block !important; 
+   } 
+ 
+   /* 4. Reducción estricta de espacios gigantes */ 
+   .py-10 { 
+     padding-top: 3.5rem !important; 
+     padding-bottom: 3.5rem !important; 
+   } 
+   .g-4, .g-5 { 
+     --bs-gutter-x: 1rem !important; 
+     --bs-gutter-y: 1.5rem !important; 
+   } 
+   .p-5 { 
+     padding: 1.5rem !important; /* Salva las tarjetas de contacto y servicios */ 
+   } 
+ 
+   /* 5. Tipografía Fluida y Auto-Ajustable (Clamp) */ 
+   h1, .display-2, .display-3, .display-4, .hero-title-gradient { 
+     font-size: clamp(1.8rem, 6vw, 2.5rem) !important; 
+     line-height: 1.2 !important; 
+     word-break: break-word !important; /* Corta la palabra si es más ancha que el celular */ 
+     hyphens: auto; 
+   } 
+   h2, .display-5 { 
+     font-size: clamp(1.5rem, 5vw, 2rem) !important; 
+   } 
+   .lead { 
+     font-size: 1rem !important; 
+   } 
+ 
+   /* 6. Fix del Navbar y Espaciado Global */ 
+   body { 
+     padding-top: 70px !important; /* Empuja el contenido debajo del menú flotante */ 
+   } 
+   .navbar-collapse { 
+     max-height: 75vh; 
+     overflow-y: auto; 
+     background-color: #0a0f16 !important; /* Asegura lectura del menú en móvil */ 
+   } 
+ 
+   /* 7. Carrusel de Logos Seguro */ 
+   .ticker-wrapper { 
+     width: 100vw !important; 
+     margin-left: -20px; /* Compensa el padding del container */ 
+   } 
+ } 
 
