@@ -25,351 +25,334 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Outfit:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="bg-dark-elite">
+    <!-- NAVBAR GLOBAL -->
     <nav class="navbar navbar-expand-lg fixed-top glass-navbar navbar-dark">
       <div class="container">
         <a class="navbar-brand fw-bold text-white" href="index.html">
-          <img
-            src="assets/img/logo.png"
-            alt="GMA Dynamics"
-            height="40"
-            class="logo-white"
-          />
+          <img src="assets/img/logo.png" alt="GMA Dynamics" height="40" class="logo-white" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarMain"
-          aria-controls="navbarMain"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMain">
           <ul class="navbar-nav ms-lg-4 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
-          <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-auto">
-            <a class="btn btn-primary-teal" href="contacto.html">Agendar Consultoría</a>
+          <div class="ms-lg-auto">
+            <a class="btn btn-primary-teal shadow-glow" href="contacto.html">Agendar Consultoría</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="hero d-flex align-items-center justify-content-center">
-      <div class="container text-center">
-        <h1 class="display-3 fw-bold hero-title mb-4" data-aos="fade-up">
-          Conectando Innovación, Automatizando el Futuro
-        </h1>
-        <p class="lead text-gray mb-5" data-aos="fade-up">
-          Transformamos tu empresa con flujos de trabajo inteligentes e
-          integración de IA.
-        </p>
-        <div
-          class="d-flex flex-column flex-sm-row gap-3 justify-content-center"
-        >
-          <a class="btn btn-primary-teal" href="contacto.html">Agendar Consultoría</a>
-          <a class="btn btn-ghost" href="servicios.html">Servicios</a>
+    <main>
+      <!-- HERO SECTION -->
+      <header class="hero-section overflow-hidden position-relative">
+        <div class="hero-bg-animated"></div>
+        <div class="container h-100 d-flex align-items-center position-relative z-1">
+          <div class="row w-100">
+            <div class="col-lg-8 mx-auto text-center">
+              <h1 class="display-2 fw-bold hero-title-gradient mb-4" data-aos="fade-up">
+                Potenciamos tu Empresa con <span class="text-teal">Automatización Elite</span>
+              </h1>
+              <p class="lead text-gray-light mb-5" data-aos="fade-up" data-aos-delay="100">
+                Integramos IA, CRM y flujos de trabajo avanzados para escalar tus operaciones al siguiente nivel. 
+                Eficiencia radical para empresas que lideran el mañana.
+              </p>
+              <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <a class="btn btn-primary-teal btn-lg px-5" href="contacto.html">Empezar Ahora</a>
+                <a class="btn btn-outline-white btn-lg px-5" href="servicios.html">Nuestras Soluciones</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- LOGO TICKER -->
+      <div class="logo-ticker py-4 border-bottom border-top border-white-10 bg-dark-elite">
+        <div class="container-fluid overflow-hidden">
+          <div class="ticker-wrapper d-flex align-items-center gap-5">
+            <div class="ticker-content d-flex align-items-center gap-5">
+              <div class="ticker-item"><i class="fa-brands fa-hubspot"></i> HubSpot</div>
+              <div class="ticker-item"><i class="fa-brands fa-salesforce"></i> Salesforce</div>
+              <div class="ticker-item"><i class="fa-brands fa-whatsapp"></i> WhatsApp</div>
+              <div class="ticker-item"><i class="fa-solid fa-microchip"></i> OpenAI</div>
+              <div class="ticker-item"><i class="fa-brands fa-google"></i> Google</div>
+              <div class="ticker-item"><i class="fa-brands fa-meta"></i> Meta</div>
+              <!-- Duplicate for infinite scroll -->
+              <div class="ticker-item"><i class="fa-brands fa-hubspot"></i> HubSpot</div>
+              <div class="ticker-item"><i class="fa-brands fa-salesforce"></i> Salesforce</div>
+              <div class="ticker-item"><i class="fa-brands fa-whatsapp"></i> WhatsApp</div>
+              <div class="ticker-item"><i class="fa-solid fa-microchip"></i> OpenAI</div>
+              <div class="ticker-item"><i class="fa-brands fa-google"></i> Google</div>
+              <div class="ticker-item"><i class="fa-brands fa-meta"></i> Meta</div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section
-      class="py-6"
-      style="
-        background: rgba(255, 255, 255, 0.02);
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      "
-    >
+      <!-- ¿QUÉ HACEMOS? -->
+      <section class="py-10 bg-dark-elite position-relative">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h2 class="display-4 fw-bold text-white mb-4">Reinventamos la Operatividad de tu Negocio</h2>
+              <p class="text-gray-light lead mb-4">
+                En GMA Dynamics no solo automatizamos tareas; rediseñamos procesos completos. 
+                Eliminamos cuellos de botella mediante arquitecturas de IA personalizadas que 
+                permiten a tu equipo enfocarse en lo que realmente importa: **Cerrar Negocios.**
+              </p>
+              <ul class="list-unstyled text-gray-light mb-5">
+                <li class="mb-3"><i class="fa-solid fa-check text-teal me-2"></i> Auditoría de procesos manuales</li>
+                <li class="mb-3"><i class="fa-solid fa-check text-teal me-2"></i> Implementación de Agentes de IA</li>
+                <li class="mb-3"><i class="fa-solid fa-check text-teal me-2"></i> Sincronización de ecosistemas CRM</li>
+              </ul>
+              <a href="servicios.html" class="btn btn-primary-teal px-4 py-2">Ver Soluciones</a>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+              <div class="glass-card p-2 overflow-hidden shadow-glow">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Control Corporativo" class="img-fluid rounded-4" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARQUITECTURA TECNOLÓGICA (BENTO GRID REFACTORED) -->
+      <section class="py-10 bg-dark-elite">
+        <div class="container">
+          <div class="text-center mb-5" data-aos="fade-up">
+            <span class="badge rounded-pill bg-teal-soft text-teal px-3 py-2 mb-3">Tecnología de Vanguardia</span>
+            <h2 class="display-5 fw-bold text-white">Arquitectura Tecnológica Elite</h2>
+          </div>
+          
+          <div class="row g-4 mb-4">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="glass-card p-5 h-100">
+                <i class="fa-solid fa-robot display-4 text-teal mb-4"></i>
+                <h3>Agentes de IA Avanzados</h3>
+                <p class="text-gray-light">Desarrollamos asistentes inteligentes que entienden el lenguaje natural (NLP) para calificar leads y dar soporte técnico 24/7 en múltiples idiomas.</p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="glass-card p-5 h-100">
+                <i class="fa-solid fa-network-wired display-5 text-teal mb-4"></i>
+                <h3>Flujos n8n Pro</h3>
+                <p class="text-gray-light">Orquestamos datos entre +400 aplicaciones con flujos de trabajo personalizados que no fallan.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row g-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="glass-card p-5 h-100">
+                <i class="fa-solid fa-shield-halved text-teal mb-3 display-6"></i>
+                <h4>Seguridad Total</h4>
+                <p class="text-gray-light small">Protección de datos bajo estándares internacionales y encriptación de grado militar.</p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="glass-card p-5 h-100">
+                <i class="fa-brands fa-whatsapp text-teal mb-3 display-6"></i>
+                <h4>API WhatsApp</h4>
+                <p class="text-gray-light small">Escalabilidad oficial sin bloqueos para comunicaciones masivas y personalizadas.</p>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="glass-card p-5 h-100">
+                <i class="fa-solid fa-headset text-teal mb-3 display-6"></i>
+                <h4>Soporte 24/7</h4>
+                <p class="text-gray-light small">Acompañamiento técnico constante para asegurar la continuidad de tus operaciones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ¿POR QUÉ AUTOMATIZAR? -->
+      <section class="py-10 bg-dark-elite border-top border-white-10">
+        <div class="container">
+          <div class="row g-4 text-center">
+            <div class="col-md-3" data-aos="zoom-in">
+              <div class="benefit-icon mb-3"><i class="fa-solid fa-clock-rotate-left display-6 text-teal"></i></div>
+              <h5 class="text-white">Ahorro de Tiempo</h5>
+              <p class="text-gray-light small">Libera a tu equipo de tareas repetitivas.</p>
+            </div>
+            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+              <div class="benefit-icon mb-3"><i class="fa-solid fa-triangle-exclamation display-6 text-teal"></i></div>
+              <h5 class="text-white">Reducción de Errores</h5>
+              <p class="text-gray-light small">Elimina el fallo humano en la carga de datos.</p>
+            </div>
+            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+              <div class="benefit-icon mb-3"><i class="fa-solid fa-chart-line display-6 text-teal"></i></div>
+              <h5 class="text-white">Escalabilidad</h5>
+              <p class="text-gray-light small">Crece sin aumentar linealmente tus costos.</p>
+            </div>
+            <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+              <div class="benefit-icon mb-3"><i class="fa-solid fa-database display-6 text-teal"></i></div>
+              <h5 class="text-white">Datos Reales</h5>
+              <p class="text-gray-light small">Toma decisiones basadas en información pura.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTEGRACIÓN DE SERVICIOS (SOFT SECTION) -->
+      <section class="py-10 bg-dark-elite border-top border-white-10">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="glass-card p-5" data-aos="fade-up">
+                <h3 class="text-white display-6 fw-bold mb-4">Automatización que impulsa resultados</h3>
+                <p class="text-gray-light lead mb-4">
+                  Nuestras implementaciones conectan equipos, sistemas y datos para reducir fricción operativa y acelerar la toma de decisiones. Escalamos contigo, desde pilotos rápidos hasta arquitecturas empresariales.
+                </p>
+                <ul class="list-unstyled text-gray-light">
+                  <li class="mb-3"><i class="fa-solid fa-check text-teal me-2"></i> Integraciones seguras y auditables</li>
+                  <li class="mb-3"><i class="fa-solid fa-check text-teal me-2"></i> Observabilidad y alertas proactivas</li>
+                  <li class="mb-3"><i class="fa-solid fa-check text-teal me-2"></i> Gobierno de datos y cumplimiento</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop"
+                  alt="Automatización Corporativa"
+                  class="img-fluid rounded-4 shadow-lg border border-white-10"
+                  loading="lazy"
+                />
+                <div class="glass-card position-absolute bottom-0 start-0 m-4 p-3 d-none d-md-block shadow-glow">
+                  <span class="text-teal fw-bold">99.9% Uptime</span>
+                  <p class="text-white small mb-0">Monitorización constante</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-10 bg-dark-elite">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="display-5 fw-bold text-white text-center mb-5">Preguntas Frecuentes</h2>
+              <div class="accordion accordion-flush glass-accordion" id="faqAccordion">
+                <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                      ¿Cuánto tiempo toma implementar una automatización?
+                    </button>
+                  </h2>
+                  <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-gray-light">
+                      Dependiendo de la complejidad, una auditoría y despliegue inicial puede tomar de 2 a 4 semanas. Proyectos más robustos de IA pueden extenderse a 8 semanas.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                      ¿Es seguro integrar mis datos corporativos con IA?
+                    </button>
+                  </h2>
+                  <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-gray-light">
+                      Absolutamente. Utilizamos APIs oficiales y entornos encriptados. Los datos no se utilizan para entrenar modelos públicos sin tu consentimiento explícito.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER GLOBAL REFACTORED -->
+    <footer class="site-footer bg-dark-elite py-10 border-top border-white-10">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="fw-bold text-white" data-aos="fade-up">
-            Arquitectura Tecnológica a tu Medida
-          </h2>
-          <p class="text-gray mb-5" data-aos="fade-up">
-            Diseñamos, desplegamos y mantenemos ecosistemas de automatización para
-            escalar operaciones corporativas.
-          </p>
-        </div>
-        <div class="row g-4">
+        <div class="row g-5 mb-5">
           <div class="col-lg-4">
-            <div
-              class="card card-glass border-0 h-100"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="card-body">
-                <div class="feature-icon-lg mb-3">
-                  <i class="fa-solid fa-robot"></i>
-                </div>
-                <h5 class="text-white mb-2">Agentes de IA & NLP</h5>
-                <p class="text-gray mb-0">
-                  Implementación de IA conversacional avanzada en canales como WhatsApp
-                  para pre-calificación y soporte automatizado.
-                </p>
+            <img src="assets/img/logo.png" alt="GMA Dynamics" height="50" class="logo-white mb-4" loading="lazy" />
+            <p class="text-gray-light mb-4">Liderando la revolución de la automatización corporativa con IA de alto rendimiento.</p>
+            <form class="newsletter-form">
+              <label class="text-white small mb-2">Suscríbete al Newsletter</label>
+              <div class="input-group">
+                <input type="email" class="form-control bg-transparent text-white border-white-10" placeholder="tu@email.com">
+                <button class="btn btn-primary-teal" type="button">Unirme</button>
               </div>
-            </div>
+            </form>
           </div>
-          <div class="col-lg-4">
-            <div
-              class="card card-glass h-100"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="card-body">
-                <div class="feature-icon-lg mb-3">
-                  <i class="fa-solid fa-network-wired"></i>
-                </div>
-                <h5 class="text-white mb-2">Orquestación con n8n</h5>
-                <p class="text-gray mb-0">
-                  Desarrollo de flujos de trabajo complejos y lógicas de enrutamiento
-                  conectando tu stack tecnológico actual.
-                </p>
-              </div>
-            </div>
+          <div class="col-lg-2 offset-lg-1">
+            <h6 class="text-white fw-bold mb-4">Empresa</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="nosotros.html" class="footer-link-elite">Nosotros</a></li>
+              <li class="mb-2"><a href="servicios.html" class="footer-link-elite">Servicios</a></li>
+              <li class="mb-2"><a href="contacto.html" class="footer-link-elite">Contacto</a></li>
+            </ul>
           </div>
-          <div class="col-lg-4">
-            <div
-              class="card card-glass h-100"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="card-body">
-                <div class="feature-icon-lg mb-3">
-                  <i class="fa-solid fa-database"></i>
-                </div>
-                <h5 class="text-white mb-2">Sincronización de CRM</h5>
-                <p class="text-gray mb-0">
-                  Integración bidireccional de bases de datos para asegurar la integridad
-                  de la información entre ventas y operaciones.
-                </p>
-              </div>
+          <div class="col-lg-2">
+            <h6 class="text-white fw-bold mb-4">Soporte</h6>
+            <ul class="list-unstyled text-gray-light small">
+              <li class="mb-2">tradingalgoritmico0@gmail.com</li>
+              <li class="mb-2">Bogotá, Colombia</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 text-lg-end">
+            <h6 class="text-white fw-bold mb-4">Síguenos</h6>
+            <div class="social-links-elite">
+              <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" class="me-3"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="py-6">
-      <div class="container">
-        <div class="text-center mb-4">
-          <h2 class="fw-bold text-white" data-aos="fade-up">Casos de Éxito</h2>
-          <p class="text-gray mb-0" data-aos="fade-up">
-            Resultados reales con automatización y IA.
-          </p>
-        </div>
-        <div id="casosExitoCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#casosExitoCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#casosExitoCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#casosExitoCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card card-glass" data-aos="fade-up" data-aos-delay="100">
-                <div class="card-body">
-                  <div class="row align-items-center g-4">
-                    <div class="col-md-6">
-                      <div class="case-label mb-3">CASO DE ÉXITO</div>
-                      <h5 class="text-white mb-3">Sincronización CRM y Operaciones</h5>
-                      <p class="text-gray mb-0">
-                        Eliminamos la fricción entre ventas y operaciones orquestando
-                        datos en tiempo real. Reducción de 40 horas mensuales en carga
-                        manual.
-                      </p>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="placeholder-img text-center p-0 overflow-hidden border-0">
-                        <img
-                          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop"
-                          alt="Dashboard CRM"
-                          class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        
+        <!-- FOOTER BOTTOM RECOVERY -->
+        <div class="border-top border-white-10 pt-4 mt-4">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="text-gray-light small mb-0">© 2026 GMA Dynamics. Todos los derechos reservados.</p>
+              <p class="text-gray-light small mb-0 mt-1">Datos Fiscales: GMA Dynamics S.A.S. | NIT: 900.000.000-1</p>
             </div>
-            <div class="carousel-item">
-              <div class="card card-glass" data-aos="fade-up" data-aos-delay="200">
-                <div class="card-body">
-                  <div class="row align-items-center g-4">
-                    <div class="col-md-6">
-                      <div class="case-label mb-3">CASO DE ÉXITO</div>
-                      <h5 class="text-white mb-3">Agente IA B2B en WhatsApp</h5>
-                      <p class="text-gray mb-0">
-                        Despliegue de inteligencia artificial conversacional capaz de
-                        calificar leads técnicos y agendar reuniones automáticamente.
-                        Aumento del 45% en conversión.
-                      </p>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="placeholder-img text-center p-0 overflow-hidden border-0">
-                        <img
-                          src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800&auto=format&fit=crop"
-                          alt="IA Conversacional"
-                          class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+              <a href="privacidad.html" class="footer-link-elite small me-3">Política de Privacidad</a>
+              <a href="terminos.html" class="footer-link-elite small me-3">Términos y Condiciones</a>
+              <a href="eliminacion-datos.html" class="footer-link-elite small">Eliminación de Datos</a>
             </div>
-            <div class="carousel-item">
-              <div class="card card-glass" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-body">
-                  <div class="row align-items-center g-4">
-                    <div class="col-md-6">
-                      <div class="case-label mb-3">CASO DE ÉXITO</div>
-                      <h5 class="text-white mb-3">Ecosistema n8n Escalable</h5>
-                      <p class="text-gray mb-0">
-                        Arquitectura de automatización sin código integrando más de 10
-                        plataformas corporativas, garantizando disponibilidad y
-                        seguridad de datos.
-                      </p>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="placeholder-img text-center p-0 overflow-hidden border-0">
-                        <img
-                          src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop"
-                          alt="Flujo de Automatización"
-                          class="img-fluid rounded-3 w-100 h-100 object-fit-cover"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#casosExitoCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#casosExitoCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <a
-      href="https://wa.me/573057725406"
-      class="whatsapp-float"
-      target="_blank"
-    >
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <footer class="site-footer">
-      <div class="container py-5">
-        <div class="row g-4">
-          <div class="col-lg-4 text-center text-lg-start">
-            <img
-              src="assets/img/logo.png"
-              alt="GMA Dynamics"
-              height="40"
-              class="logo-white mb-3"
-            />
-            <p class="text-gray mb-0">
-              Conectando Innovación, Automatizando el Futuro.
-            </p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <h6 class="text-white mb-3">Navegación</h6>
-            <div class="d-flex flex-column gap-2">
-              <a class="footer-link m-0" href="index.html">Inicio</a>
-              <a class="footer-link m-0" href="servicios.html">Servicios</a>
-              <a class="footer-link m-0" href="nosotros.html">Nosotros</a>
-              <a class="footer-link m-0" href="contacto.html">Contacto</a>
-            </div>
-          </div>
-          <div class="col-lg-4 text-center text-lg-end">
-            <h6 class="text-white mb-3">Contacto</h6>
-            <p class="text-gray mb-1">tradingalgoritmico0@gmail.com</p>
-            <p class="text-gray mb-0">Bogotá, Colombia</p>
-            <div class="social-links mt-3">
-              <a class="me-3" href="https://www.linkedin.com" target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a class="me-3" href="https://www.instagram.com" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://x.com" target="_blank"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-            </div>
-            <p class="small text-gray mt-3 mb-0">
-              Datos Fiscales: GMA Dynamics S.A.S. | NIT: 900.000.000-1
-            </p>
-          </div>
-        </div>
-        <div
-          class="row align-items-center g-3 border-top border-light border-opacity-10 mt-4 pt-3"
-        >
-          <div class="col-md-6 text-center text-md-start text-gray">
-            © 2026 GMA Dynamics. Todos los derechos reservados.
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <a class="footer-link" href="privacidad.html">Política de Privacidad</a>
-            <a class="footer-link" href="terminos.html">Términos y Condiciones</a>
-            <a class="footer-link" href="eliminacion-datos.html">Eliminación de Datos</a>
           </div>
         </div>
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- WhatsApp Coin Flip Widget -->
+    <div class="whatsapp-flip-container">
+      <a href="https://wa.me/573057725406" target="_blank" class="whatsapp-flip-card">
+        <div class="whatsapp-flip-inner">
+          <div class="whatsapp-flip-front">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="whatsapp-flip-back">
+            <img src="https://ui-avatars.com/api/?name=Agente+IA&background=00B2A9&color=fff" alt="Agente IA" loading="lazy">
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
