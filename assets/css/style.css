@@ -433,7 +433,7 @@ section {
   color: #ffffff !important;
 }
 
-.btn-ghost {
+.btn-ghost, .btn-outline-white {
   background-color: transparent !important;
   color: #ffffff !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
@@ -443,7 +443,7 @@ section {
   transition: all 0.3s ease;
 }
 
-.btn-ghost:hover {
+.btn-ghost:hover, .btn-outline-white:hover {
   border-color: #00B2A9 !important;
   color: #00B2A9 !important;
   background-color: rgba(0, 178, 169, 0.05) !important;
